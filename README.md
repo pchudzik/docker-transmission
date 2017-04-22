@@ -2,7 +2,11 @@
 
 How to build:
 
-```docker build --build-arg UID=`id -u` --build-arg GUID=`id -g` -t transmission git@github.com:pchudzik/docker-transmission.git```
+```
+git@github.com:pchudzik/docker-transmission.git
+docker build --build-arg UID=`id -u` --build-arg GUID=`id -g` -t transmission .
+```
+It will clone repo with required folders in place and initial configuration file.
 
 To run:
 
